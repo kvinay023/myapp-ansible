@@ -1,0 +1,12 @@
+---
+- hosts: ubuntu
+  become: true
+  tasks:
+
+    - name: Install Apache
+      apt: name=apache2 update_cache=yes state=latest
+
+    - name: Copy index test page
+      template:
+        src: "index.html"
+        dest: "/var/www/html"
