@@ -1,0 +1,9 @@
+---
+- hosts: winhost
+  gather_facts: no
+  tasks:
+
+   - name: Install Chocolatey on Windows10
+     win_chocolatey: name=procexp  state=present
+   - name: Install 7Zip Archive Software
+     win_chocolatey: name=7zip state=absent
