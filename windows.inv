@@ -1,5 +1,6 @@
 [winhost]
 172.31.38.88
+172.31.46.91
 
 [winhost:vars]
 ansible_user=Administrator
